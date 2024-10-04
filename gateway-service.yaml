@@ -1,3 +1,5 @@
+compani1:
+  url: http://localhost:8081 
 spring:
   cloud:
     gateway:
@@ -27,7 +29,6 @@ eureka:
     register-with-eureka: true
     service-url:
       defaultZone: http://localhost:8761/eureka/
-
 my:
   property:
     name: "Sultan from gateway-service"
