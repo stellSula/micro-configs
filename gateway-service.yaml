@@ -1,6 +1,10 @@
 spring:
   cloud:
     gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
       routes:
         - id: compani1_route
           uri: lb://compani1  # Переадресация запросов на микросервис compani_1
