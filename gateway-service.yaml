@@ -5,19 +5,19 @@ spring:
         - id: compani1_route
           uri: lb://COMPANI_1  # Переадресация запросов на микросервис compani_1
           predicates:
-            - Path=/api/test/compani1/**
+            - Path=/api/v1/compani1/**
         - id: compani2_route
           uri: lb://COMPANI_2  # Переадресация запросов на микросервис compani_2
           predicates:
-            - Path=/api/test/compani2/**
+            - Path=/api/v1/compani2/**
         - id: compani3_route
           uri: lb://COMPANI_3  # Переадресация запросов на микросервис compani_3
           predicates:
-            - Path=/api/test/compani3/**
+            - Path=/api/v1/compani3/**
         - id: compani4_route
           uri: lb://COMPANI_4  # Переадресация запросов на микросервис compani_4
           predicates:
-            - Path=/api/test/compani4/**
+            - Path=/api/v1/compani4/**
 eureka:
   client:
     register-with-eureka: true
