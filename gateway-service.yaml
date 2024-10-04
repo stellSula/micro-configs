@@ -26,4 +26,4 @@ eureka:
 
 my:
   property:
-    name: "Sultan"
+    name: "Sultan from gateway-service"
