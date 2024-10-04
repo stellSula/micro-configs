@@ -3,19 +3,19 @@ spring:
     gateway:
       routes:
         - id: compani1_route
-          uri: lb://COMPANI_1  # Переадресация запросов на микросервис compani_1
+          uri: lb://compani1  # Переадресация запросов на микросервис compani_1
           predicates:
             - Path=/api/v1/compani1/**
         - id: compani2_route
-          uri: lb://COMPANI_2  # Переадресация запросов на микросервис compani_2
+          uri: lb://compani2  # Переадресация запросов на микросервис compani_2
           predicates:
             - Path=/api/v1/compani2/**
         - id: compani3_route
-          uri: lb://COMPANI_3  # Переадресация запросов на микросервис compani_3
+          uri: lb://compani3  # Переадресация запросов на микросервис compani_3
           predicates:
             - Path=/api/v1/compani3/**
         - id: compani4_route
-          uri: lb://COMPANI_4  # Переадресация запросов на микросервис compani_4
+          uri: lb://compani4  # Переадресация запросов на микросервис compani_4
           predicates:
             - Path=/api/v1/compani4/**
 eureka:
