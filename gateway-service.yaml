@@ -1,11 +1,6 @@
 compani1:
   url: http://localhost:8081 
 spring:
-  datasource:
-    url: jdbc:postgresql://localhost:5432/microservices_db
-    username: postgres
-    password: bbcstzh1
-    driver-class-name: org.postgresql.Driver
   cloud:
     gateway:
       discovery:
