@@ -1,5 +1,3 @@
-compani1:
-  url: http://localhost:8081 
 spring:
   cloud:
     gateway:
