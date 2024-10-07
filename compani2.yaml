@@ -7,7 +7,7 @@ spring:
   jpa:
     hibernate:
       dialect: org.hibernate.dialect.PostgreSQLDialect
-      ddl-auto: update
+      ddl-auto: none
       show-sql: true
 eureka:
   client:
