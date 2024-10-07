@@ -4,6 +4,11 @@ spring:
     username: postgres
     password: bbcstzh1
     driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      dialect: org.hibernate.dialect.PostgreSQLDialect
+      ddl-auto: update
+      show-sql: true
 eureka:
   client:
     service-url:
