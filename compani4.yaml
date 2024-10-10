@@ -5,7 +5,10 @@ spring:
     password: bbcstzh1
     driver-class-name: org.postgresql.Driver
   rabbitmq:
-    queue: compani4_queue
+    main_queue: main_queue
+    exchange: exchange
+    success_routing_key: success_routing_key
+    error_routing_key: error_routing_key
     host: localhost  # или адрес RabbitMQ сервера
     port: 5672
     username: guest
