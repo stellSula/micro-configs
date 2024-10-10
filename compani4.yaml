@@ -5,7 +5,6 @@ spring:
     password: bbcstzh1
     driver-class-name: org.postgresql.Driver
   rabbitmq:
-    main_queue: main_queue
     exchange: exchange
     success_routing_key: success_routing_key
     error_routing_key: error_routing_key
