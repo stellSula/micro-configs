@@ -23,12 +23,13 @@ spring:
           predicates:
             - Path=/api/v1/compani4/**
   rabbitmq:
+    main_queue: main_queue
+    exchange: exchange
+    main_routing_key: main_routing_key
     host: localhost
     port: 5672
     username: guest
     password: guest
-    exchange: compani4_exchange
-    routingkey: compani4_routing_key 
 eureka:
   client:
     register-with-eureka: true
